@@ -34,7 +34,7 @@ If you would rather use something other than Visual Studio:
 __Note:__ This isn't the only way to accomplish implementation. However, this is what the project's tests are expecting. Implementing the features in a different way will likely result in being marked as incomplete / incorrect.
 
 - [ ] Create a new `TabbedPage` in the `Views/Nutrition` folder with the name `NutritionView`.
-    - [ ] When you create the `TabbedPage` in Visual Studio (or similiar) the following code should be generated for you, if not you'll need to add it yourself.
+    - [ ] When you create the `TabbedPage` in Visual Studio (or similiar) the following code should be generated for you, if not you'll need to add it yourself. *(Nate: If you have to make this yourself make sure the `NutritionView.xaml.cs` file inherits the `TabbedPage` class.)*
       - The first line should be the `xml` tag `<?xml version="1.0" encoding="utf-8" ?>`.
       - The second line should be an opening `TabbedPage` tag with the following attributes:
         - `xmlns="http://xamarin.com/schemas/2014/forms"`
@@ -51,7 +51,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
     - [ ] After the `nutritionviews:LunchView` tag, add a new self closing tag with the type `nutritionviews:DinnerView`.
     - [ ] After the `nutritionviews:DinnerView` tag, add a new self closing tag with the type `nutritionviews:SnackView`.
 - [ ] Create a new `CarouselPage` in the `Views/Fitness` folder with the name `FitnessView`.
-  - [ ] When you create the `CarouselPage` in Visual Studio (or similiar)the following code should be generated for you, if not you'll need to add it yourself.
+  - [ ] When you create the `CarouselPage` in Visual Studio (or similiar)the following code should be generated for you, if not you'll need to add it yourself. *(Note: there is a good chance you won't find `CarouselPage` when creating the new page, if not use `TabbedPage` and change the `TabbedPage` tags to `CarouselPage` and make sure the `FitnessView.xaml.cs` file inherits the `CarouselPage` class instead of the `TabbedPage` class)*
   - [ ] - The first line should be the `xml` tag `<?xml version="1.0" encoding="utf-8" ?>`.
       - The second line should be an opening `CarouselPage` tag with the following attributes:
         - `xmlns="http://xamarin.com/schemas/2014/forms"`
