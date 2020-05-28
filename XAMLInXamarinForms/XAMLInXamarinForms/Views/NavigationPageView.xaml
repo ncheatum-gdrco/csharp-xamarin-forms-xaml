@@ -6,6 +6,23 @@
              xmlns:viewmodels="clr-namespace:XAMLInXamarinForms.ViewModels"
              mc:Ignorable="d"
              x:Class="XAMLInXamarinForms.Views.NavigationPageView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="Font">Calibri</Setter>
+                <Setter Property="BackgroundColor">White</Setter>
+                <Setter Property="Margin">5</Setter>
+                <Setter Property="HorizontalOptions">FillAndExpand</Setter>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="Font">Calibri</Setter>
+                <Setter Property="BackgroundColor">White</Setter>
+                <Setter Property="HorizontalTextAlignment">Center</Setter>
+                <Setter Property="Padding">10</Setter>
+                <Setter Property="HorizontalOptions">FillAndExpand</Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout BindingContext="{viewmodels:PlannerViewModel}">
             <Label Text="Wellness Manager" FontSize="Header" BackgroundColor="LightBlue" />
