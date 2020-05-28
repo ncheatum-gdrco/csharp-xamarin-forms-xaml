@@ -82,7 +82,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
     - [ ] On our button with the `Text` attribute with a value of `{Binding Nutrition}` add a new `Clicked` attribute with the value `"NutritionButton_Clicked"`.
 - [ ] In our `Views/NavigationPageView.xaml.cs` file, wire up our `PrivacyModal` to be presented when the page loads.
   - [ ] Create a new `private` `async` method with a return type of `void` named `PopModal` that accepts no arguments.
-    - This method should contain only one line of code that calls `Navigation.PushModalAsync` with arguments of a newly instantiated `PrivacyModal`, and `true`. Don`t forget to `await`!
+    - This method should contain only one line of code that calls `Navigation.PushModalAsync` with arguments of a newly instantiated `PrivacyModal`, and `true`. Don't forget to `await`!
   - [ ] In our `NavigationPageView`'s constructor after we call `InitializeComponent` call the newly created `PopModal` method.
 - [ ] In our `Views/NavigationPageView.xaml` file, add basic styling to dramatically improve the application's presentation.
   - [ ] Between our `ContentPage` tags and before our `ContentPage.Content` tags add an opening and closing `ContentPage.Resources` tags.
