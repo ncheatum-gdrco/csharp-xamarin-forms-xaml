@@ -44,7 +44,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
         - `mc:Ignorable="d"`
         - `x:Class="XAMLInXamarinForms.Views.Nutrition.NutritionView"`
       - The last line should be the closing `TabbedPage` tag.
-    - [ ] In our `TabbedPage`'s opening tag add an attribute `xlmns:nutritionviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Nutrition"`.
+    - [ ] In our `TabbedPage`'s opening tag add an attribute `xmlns:nutritionviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Nutrition"`.
     - [ ] Between the `TabbedPage` tags, add opening and closing `TabbedPage.Title` tags containing the value `Nutrition`.
     - [ ] After the closing `TabbedPage.Title` tag, add a new self closing tag with the of type `nutritionviews:BreakfastView`.
     - [ ] After the `nutritionviews:BreakfastView` tag, add a new self closing tag with the type `nutritionviews:LunchView`.
