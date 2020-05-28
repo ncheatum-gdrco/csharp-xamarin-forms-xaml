@@ -61,7 +61,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
         - `mc:Ignorable="d"`
         - `x:Class="XAMLInXamarinForms.Views.Fitness.FitnessView"`
       - The last line should be the closing `CarouselPage` tag.
-      - [ ] In our `CarouselPage`'s opening tag add an attribute `xlmns:fitnessviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Fitness"`.
+      - [ ] In our `CarouselPage`'s opening tag add an attribute `xmlns:fitnessviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Fitness"`.
       - [ ] Between the `CarouselPage` tags, add opening and closing `CarouselPage.Title` tags containing the value `Fitness`.
       - [ ] After the closing `CarouselPage.Title` tag, add a new self closing tag with the of type `fitnessviews:SundayView`.
       - [ ] After the `fitnessviews:SundayView` tag, add a new self closing tag with the of type `fitnessviews:MondayView`.
