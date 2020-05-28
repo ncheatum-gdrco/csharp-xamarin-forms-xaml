@@ -16,6 +16,13 @@ namespace XAMLInXamarinForms.Views
         public NavigationPageView()
         {
             InitializeComponent();
+
+            PopModal();
+        }
+
+        private async void PopModal()
+        {
+            await this.Navigation.PushModalAsync(new PrivacyModal(), true);
         }
 
         private async void FitnessButton_Clicked(object sender, EventArgs e)
