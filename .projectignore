@@ -1,0 +1,5 @@
+XAMLInXamarinForms/XAMLInXamarinForms/XAMLInXamarinForms.csproj
+XAMLInXamarinForms/XAMLInXamarinForms.Tests/XAMLInXamarinForms.Tests.csproj
+XAMLInXamarinForms/XAMLInXamarinForms.iOS/XAMLInXamarinForms.iOS.csproj
+XAMLInXamarinForms/XAMLInXamarinForms.Android/XAMLInXamarinForms.Android.csproj
+XAMLInXamarinForms/XAMLInXamarinForms.UWP/XAMLInXamarinForms.UWP.csproj

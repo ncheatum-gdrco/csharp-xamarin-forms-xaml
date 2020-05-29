@@ -34,7 +34,7 @@ If you would rather use something other than Visual Studio:
 __Note:__ This isn't the only way to accomplish implementation. However, this is what the project's tests are expecting. Implementing the features in a different way will likely result in being marked as incomplete / incorrect.
 
 - [ ] Create a new `TabbedPage` in the `Views/Nutrition` folder with the name `NutritionView`.
-    - [ ] When you create the `TabbedPage` in Visual Studio (or similiar) the following code should be generated for you, if not you'll need to add it yourself.
+    - [ ] When you create the `TabbedPage` in Visual Studio (or similiar) the following code should be generated for you, if not you'll need to add it yourself. *(Note: If you have to make this yourself make sure the `NutritionView.xaml.cs` file inherits the `TabbedPage` class.)*
       - The first line should be the `xml` tag `<?xml version="1.0" encoding="utf-8" ?>`.
       - The second line should be an opening `TabbedPage` tag with the following attributes:
         - `xmlns="http://xamarin.com/schemas/2014/forms"`
@@ -51,7 +51,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
     - [ ] After the `nutritionviews:LunchView` tag, add a new self closing tag with the type `nutritionviews:DinnerView`.
     - [ ] After the `nutritionviews:DinnerView` tag, add a new self closing tag with the type `nutritionviews:SnackView`.
 - [ ] Create a new `CarouselPage` in the `Views/Fitness` folder with the name `FitnessView`.
-  - [ ] When you create the `CarouselPage` in Visual Studio (or similiar)the following code should be generated for you, if not you'll need to add it yourself.
+  - [ ] When you create the `CarouselPage` in Visual Studio (or similiar)the following code should be generated for you, if not you'll need to add it yourself. *(Note: there is a good chance you won't find `CarouselPage` when creating the new page, if not use `TabbedPage` and change the `TabbedPage` tags to `CarouselPage` and make sure the `FitnessView.xaml.cs` file inherits the `CarouselPage` class instead of the `TabbedPage` class)*
   - [ ] - The first line should be the `xml` tag `<?xml version="1.0" encoding="utf-8" ?>`.
       - The second line should be an opening `CarouselPage` tag with the following attributes:
         - `xmlns="http://xamarin.com/schemas/2014/forms"`
@@ -61,7 +61,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
         - `mc:Ignorable="d"`
         - `x:Class="XAMLInXamarinForms.Views.Fitness.FitnessView"`
       - The last line should be the closing `CarouselPage` tag.
-      - [ ] In our `CarouselPage`'s opening tag add an attribute `xlmns:fitnessviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Fitness"`.
+      - [ ] In our `CarouselPage`'s opening tag add an attribute `xmlns:fitnessviews` with a value `"clr-namespace:XAMLInXamarinForms.Views.Fitness"`.
       - [ ] Between the `CarouselPage` tags, add opening and closing `CarouselPage.Title` tags containing the value `Fitness`.
       - [ ] After the closing `CarouselPage.Title` tag, add a new self closing tag with the of type `fitnessviews:SundayView`.
       - [ ] After the `fitnessviews:SundayView` tag, add a new self closing tag with the of type `fitnessviews:MondayView`.
@@ -82,7 +82,7 @@ __Note:__ This isn't the only way to accomplish implementation. However, this is
     - [ ] On our button with the `Text` attribute with a value of `{Binding Nutrition}` add a new `Clicked` attribute with the value `"NutritionButton_Clicked"`.
 - [ ] In our `Views/NavigationPageView.xaml.cs` file, wire up our `PrivacyModal` to be presented when the page loads.
   - [ ] Create a new `private` `async` method with a return type of `void` named `PopModal` that accepts no arguments.
-    - This method should contain only one line of code that calls `Navigation.PushModalAsync` with arguments of a newly instantiated `PrivacyModal`, and `true`. Don`t forget to `await`!
+    - This method should contain only one line of code that calls `Navigation.PushModalAsync` with arguments of a newly instantiated `PrivacyModal`, and `true`. Don't forget to `await`!
   - [ ] In our `NavigationPageView`'s constructor after we call `InitializeComponent` call the newly created `PopModal` method.
 - [ ] In our `Views/NavigationPageView.xaml` file, add basic styling to dramatically improve the application's presentation.
   - [ ] Between our `ContentPage` tags and before our `ContentPage.Content` tags add an opening and closing `ContentPage.Resources` tags.
