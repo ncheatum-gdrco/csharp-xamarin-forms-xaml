@@ -3,6 +3,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XAMLInXamarinForms.ViewModels;
+using XAMLInXamarinForms.Views.Fitness;
+using XAMLInXamarinForms.Views.Nutrition;
 
 namespace XAMLInXamarinForms.Views
 {
@@ -14,6 +16,16 @@ namespace XAMLInXamarinForms.Views
         public NavigationPageView()
         {
             InitializeComponent();
+        }
+
+        private async void FitnessButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FitnessView());
+        }
+
+        private async void NutritionButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NutritionView());
         }
     }
 }
